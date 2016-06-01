@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JS简单练习-02</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<form class="recursion" id="accumulation">
+			<p>1、输入一个数n，实现从0到n进行累加</p>
+			<label name="number">输入数值n：</label>
+			<input type="text" id="number" name="number" required="required" placeholder="请输入一个整数--n" />
+			<input type="submit" id="sum-btn" value="sum" onClick="Sum('number');" / >
+		</form>
+
+		
+		<div class="drag">
+			<p id="size">10px</p>
+			<!-- 拖放条——尺子 -->
+			<div class="rule" id="rule"></div>
+			<!-- 拖放条——拖放块 -->
+			<div class="block" id="block"></div>
+			<!-- 拖放条——刻度 -->
+			<ul class="range">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!-- 拖放条——刻度 -->
+			<div class="scale" id="scale">
+				<span>0px</span>
+				<span>25px</span>
+				<span>50px</span>
+				<span>75px</span>
+				<span>100px</span>
+			</div>
+			<!-- 拖放条——文字 -->
+			<p class="text" id="text">放大缩小</p>
+		</div>
+
+		
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</body>
+</html>
